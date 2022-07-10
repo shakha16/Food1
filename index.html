@@ -37,7 +37,7 @@
         <div class="container">
             <div class="tabcontainer">
                 <div class="tabcontent fitnes">
-                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <img src="img/tabs/vegy.jpg" alt="vegy" class="imgg">
                     <div class="tabcontent__descr">
                         Меню "Фитнес" - это новый подход к приготовлению блюд: больше свежих овощей и фруктов. Для людей, которые интересуются спортом; активных и здоровых. Это абсолютно новый продукт с оптимальной ценой и высоким качеством!
                     </div>
@@ -55,7 +55,7 @@
                     </div>
                 </div>
                 <div class="tabcontent balans" style="display: none;">
-                    <img src="img/tabs/vegy.jpg" alt="vegy">
+                    <img src="img/tabs/hamburger.jpg" alt="vegy">
                     <div class="tabcontent__descr">
                         Меню "Сбалансированное" - это соответствие вашего рациона всем научным рекомендациям. Мы тщательно просчитываем вашу потребность в к/б/ж/у и создаем лучшие блюда для вас.
                     </div>
@@ -63,10 +63,10 @@
                 <div class="tabheader">
                     <h3>Выберите стиль питания</h3>
                     <div class="tabheader__items">
-                        <div class="tabheader__item tabheader__item_active fitnes1">Фитнес</div>
-                        <div class="tabheader__item premium1">Премиум</div>
-                        <div class="tabheader__item prostornoe1">Постное</div>
-                        <div class="tabheader__item balans1">Сбалансированное</div>
+                        <div data-name="fitnes" class="tabheader__item tabheader__item_active fitnes1">Фитнес</div>
+                        <div data-name="premium" class="tabheader__item premium1">Премиум</div>
+                        <div data-name="menu" class="tabheader__item prostornoe1">Постное</div>
+                        <div data-name="balance" class="tabheader__item balans1">Сбалансированное</div>
                     </div>
                 </div>
             </div>
@@ -107,7 +107,7 @@
                     </div>
                     <span id="current" class="how">01</span>
                     /
-                    <span id="total" class="luv">02</span>
+                    <span id="total" class="luv">04</span>
                     <div class="offer__slider-next">
                         <img src="icons/right.svg" alt="next" class="next">
                     </div>
@@ -132,7 +132,7 @@
 
     <div class="divider"></div>
 
-    <div class="calculating" id="second" >
+    <div class="calculating" id="second">
         <div class="container">
             <h2 class="title">Рассчитаем вашу потребность в калориях?
             </h2>
@@ -141,8 +141,8 @@
                     Ваш пол
                 </div>
                 <div class="calculating__choose" id="gender">
-                    <div class="calculating__choose-item calculating__choose-item_active">Женщина</div>
-                    <div class="calculating__choose-item">Мужчина</div>
+                    <div data-gen="woman" class="calculating__choose-item calculating__choose-item_active">Женщина</div>
+                    <div data-gen="man" class="calculating__choose-item">Мужчина</div>
                 </div>
 
                 <div class="calculating__subtitle">
@@ -158,10 +158,10 @@
                     Выберите вашу физическая активность
                 </div>
                 <div class="calculating__choose calculating__choose_big">
-                    <div id="low" class="calculating__choose-item">Низкая активность </div>
-                    <div id="small"  class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
-                    <div id="medium" class="calculating__choose-item">Умеренная активность</div>
-                    <div id="high" class="calculating__choose-item">Высокая активность</div>
+                    <div id="low" data-active="" class="calculating__choose-item">Низкая активность </div>
+                    <div id="small"  data-active="" class="calculating__choose-item calculating__choose-item_active">Невысокая активность</div>
+                    <div id="medium" data-active="" class="calculating__choose-item">Умеренная активность</div>
+                    <div id="high" data-active="" class="calculating__choose-item">Высокая активность</div>
                 </div>
 
                 <div class="calculating__divider"></div>
